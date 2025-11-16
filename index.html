@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê Criativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ateliê Criativo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                
+                <div class="botoes-filtro">
+                    <button class="filtro-btn active" data-filter="todos">Todos</button>
+                    <button class="filtro-btn" data-filter="costura">Costura Criativa</button>
+                    <button class="filtro-btn" data-filter="papelaria">Papelaria Criativa</button>
+                </div>
+
+                <div class="galeria-produtos">
+                    
+                    <div class="produto-item" data-category="costura">
+                        <img src="/imgs/jogo-de-toalha.png" alt="Jogo de toalha">
+                        <h3>Jogo de Toalha</h3>
+                        <p>Jogo de toalha para seu bebe.</p>
+                        <span class="preco">R$ 80,00</span>
+                        <a href="https://api.whatsapp.com/send?phone=MascararNumero&text=Olá!%20Tenho%20interesse%20no%20Jogo%20de%20Toalha%20." class="btn-whatsapp" target="_blank">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="produto-item" data-category="papelaria">
+                        <img src="/imgs/planner.png" alt="Planner">
+                        <h3>Planner Fichario</h3>
+                        <p>Planner com capa dura personalizada e 100 folhas decoradas.</p>
+                        <span class="preco">R$ 65,00</span>
+                        <a href="https://api.whatsapp.com/send?phone=MascararNumero&text=Olá!%20Tenho%20interesse%20no%20Planner%20." class="btn-whatsapp" target="_blank">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="produto-item" data-category="costura">
+                        <img src="/imgs/porta-jaleco.png" alt="Porta Jaleco">
+                        <h3>Porta Jaleco</h3>
+                        <p>Porta jaleco para guardar seu jaleco.</p>
+                        <span class="preco">R$ 45,00</span>
+                        <a href="https://api.whatsapp.com/send?phone=MascararNumero&text=Olá!%20Tenho%20interesse%20no%20Porta%20Jaleco." class="btn-whatsapp" target="_blank">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="produto-item" data-category="papelaria">
+                        <img src="/imgs/caderneta-stitch.png" alt="Caderneta">
+                        <h3>Caderneta Stitch</h3>
+                        <p>Bloco com 50 folhas.</p>
+                        <span class="preco">R$ 25,00</span>
+                        <a href="https://api.whatsapp.com/send?phone=MascararNumero&text=Olá!%20Tenho%20interesse%20na%20Caderneta%20de%20Stitch." class="btn-whatsapp" target="_blank">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                    
+                    </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <img src="/Imgs/perfil.png" alt="Foto perfil" class="foto-perfil">
+                <p>Olá! Meu nome é Ana Cristina. Sou apaixonada por criar peças únicas que trazem mais cor e alegria para o seu dia a dia. Tudo aqui é feito à mão, com muito carinho e dedicação, desde a escolha do tecido até o último detalhe. Espero que goste!</p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Encomende o seu</h2>
+                <p>Gostou de algo ou quer uma peça personalizada? Me chame nas redes sociais!</p>
+                <div class="redes-sociais">
+                    <a href="https://instagram.com/MascararInsta" target="_blank">Instagram</a>
+                    <a href="https://api.whatsapp.com/send?phone=MascararNumero" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ateliê Criativo. Todos os direitos reservados.</p>
+            <p class="extensao">Site desenvolvido para projeto de extensão Estacio</p>
+        </div>
+    </footer>
+<script src="/script.js"></script>
+</body>
+</html>
