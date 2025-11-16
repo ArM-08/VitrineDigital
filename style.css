@@ -1,0 +1,253 @@
+
+:root {
+    --cor-primaria: #d8a7c8; 
+    --cor-secundaria: #fdf0f7; 
+    --cor-texto: #333;
+    --cor-fundo: #ffffff;
+    --cor-destaque: #8a4e78; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    background-color: var(--cor-fundo);
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--cor-destaque);
+    font-size: 22px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bold;
+    font-size: 14px
+}
+
+header nav a:hover {
+    color: var(--cor-primaria);
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--cor-destaque);
+    margin-bottom: 40px;
+}
+
+
+.botoes-filtro {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filtro-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid var(--cor-primaria);
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro-btn:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.filtro-btn.active {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.galeria-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.produto-item {
+    background-color: var(--cor-fundo);
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.produto-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+}
+
+.produto-item h3 {
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin: 15px 20px 5px;
+}
+
+.produto-item p {
+    font-size: 14px;
+    margin: 0 20px 15px;
+
+}
+
+.produto-item .preco {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cor-destaque);
+    margin: 0 20px 15px;
+}
+.produto-item.hidden {
+    display: none;
+}
+
+
+.btn-whatsapp {
+    display: block;
+    background-color: #25D366; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 0 20px 20px;
+    border-radius: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+#sobre .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+    border: 4px solid var(--cor-primaria);
+}
+
+#contato {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    background-color: var(--cor-destaque);
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .extensao {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .botoes-filtro {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
